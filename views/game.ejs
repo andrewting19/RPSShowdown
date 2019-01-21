@@ -3,25 +3,44 @@
 <head>
   <title>P,R,S - Game</title>
   <link rel="stylesheet" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  </head>
 
 <body>
   <% include global/header %>
-
-  <div id="feedback">
+  <div id="feedback" class="positive">
+    Welcome, <%=user.name%>!
   </div>
   <div id="throw_choice">
       <h2 id = "throw_choice_header">Choose your hand, <%=user.name%> </h2>
       <form action="<%=user.name%>/results" method="get">
-        Enter your choice of weapon:<br>
+        What will you pick?<br>
         <select id="select_throw_choice" name="weapon">
           <option value="0"> </option>
           <option value="1">Rock</option>
           <option value="2">Paper</option>
           <option value="3">Scissors</option>
-        </select><br>
+        </select><br><br>
+        Who will be your opponent?<br>
+        <select id = "select_villain" name="villain">
+          <option value="rps"> </option>
+          <option value="Bones">Bones</option>
+          <option value="Comic_Hans">Comic Hans</option>
+          <option value="Gato">Gato</option>
+          <option value="Harry">Harry</option>
+          <option value="Manny">Manny</option>
+          <option value="Mickey">Mickey</option>
+          <option value="Mr_Modern">Mr. Modern</option>
+          <option value="Pixie">Pixie</option>
+          <option value="Regal">Regal</option>
+          <option value="Spock">Spock</option>
+          <option value="The_Boss">The Boss</option>
+          <option value="The_Magician">The Magician</option>
+        </select>
+        <br><br>
         <button type = "submit" id="player_throw_submit_button">Submit</button>
       </form>
+      <img id = "villain_img" width = "200" height = "200" src = "images/rps_waiting.svg">
     </div>
     <div id="buttons">
       <a class="button" href ="/rules">Rules</a>
@@ -29,8 +48,13 @@
       <a class="button" href ="/about">About</a>
       <a class="button" href ="/">Log Out</a>
     </div>
-  <footer>
-    Brought to you by the cool kids of Software Engineering - Fall, 2018.
-  </footer>
+  <% include global/footer %>
+  <!-- <script src="scripts/scripts.js"></script> -->
+  <script>
+  $("#select_villain").change(function(){
+    var villain = $( "#select_villain" ).val();
+    $("#villain_img").attr("src", "images/"+villain.toLowerCase()+"_waiting.svg");
+  });
+  </script>
  </body>
 </html>

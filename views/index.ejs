@@ -7,9 +7,15 @@
 
 <body>
   <% include global/header %>
-
-  <div id="feedback" class="hidden">
-  </div>
+  <%if (indexError != 0){%>
+    <div id="feedback" class = "negative">
+      <%if (indexError === 2){%>
+        Wrong Password
+      <%} else if (indexError === 1){%>
+        Please input a username and password to continue.
+      <%}%>
+    </div>
+  <%}%>
   <div id="enter_name">
     <h2>Welcome to Rock, Paper, Scissors</h2>
     <form action="/login" method="get">
