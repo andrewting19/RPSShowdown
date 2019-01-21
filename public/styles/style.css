@@ -1,0 +1,161 @@
+body{
+  background-color: #afcbff;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+div {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+}
+footer{
+  font-size: 16px;
+}
+li{
+  list-style-type: none;
+  margin-left: -35px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+h2{
+  background-color: #cfdbff;
+}
+
+#header {
+  position: relative;
+  background-color: #97a2ff;
+  border: none;
+  margin: 0px;
+  height: 70px;
+  top: -12px;
+}
+#header h1 {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 40px;
+  color: #ffffff;
+}
+#header img{
+  float: right;
+  padding-right: 15px;
+}
+#enter_name{
+  background-color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 1.5em;
+}
+#feedback{
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  padding:5px;
+}
+#throw_choice{
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 1.5em;
+}
+#general_game_results{
+  font-weight: bold;
+}
+#player_image {
+  height: 100px;
+  width: 100px;
+  float: center;
+}
+#browser_image {
+  height: 110px;
+  width: 110px;
+  float: center;
+  padding-top: 20px;
+}
+#game_results{
+  padding-bottom: 10px;
+}
+#game_results td{
+  float: center;
+  text-align: center;
+  width: 33%;
+}
+#rules{
+  padding-bottom: 5px;
+}
+#stats td{
+  text-align: left;
+  padding: 8px;
+  border: 0px;
+  width: 60%;
+}
+#buttons{
+  background-color: #afcbff;
+}
+#show_rules_button, #show_stats_button, #back_to_game_button, #log_out_button, #player_throw_submit_button{
+  position: relative;
+  background-color: #97a2ff;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  align-items: center;
+  border: none;
+  outline-color: white;
+}
+.data{
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display:block;
+}
+.throw_table{
+  float: center;
+  width: 50%;
+}
+.negative {
+  background-color: #ffb7b2;
+  border-left-style: solid;
+  border-color: red;
+}
+.positive {
+  background-color: #abeab6;
+  border-left-style: solid;
+  border-color: green;
+}
+.neutral {
+  background-color: #dddddd;
+  border-left-style: solid;
+  border-color: #696969;
+}
+.button {
+  position: relative;
+  background-color: #97a2ff;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  align-items: center;
+  border: none;
+  outline-color: white;
+  text-decoration: none;
+}

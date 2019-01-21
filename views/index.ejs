@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock, Paper, Scissors - Index</title>
+  <link rel="stylesheet" href="styles/style.css">
+ </head>
+
+<body>
+  <% include global/header %>
+
+  <div id="feedback" class="hidden">
+  </div>
+  <div id="enter_name">
+    <h2>Welcome to Rock, Paper, Scissors</h2>
+    <form action="/login" method="get">
+      Username: <br>
+      <input type="text" id="enter_name_input" name="name"><br>
+      Password: <br>
+      <input type="password" id="enter_password_input" name="password"><br>
+      <button type="submit" id = "log_in_button">Submit</button>
+  </div>
+  <!-- <script src="scripts/scripts.js"></script> -->
+ </body>
+</html>

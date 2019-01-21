@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P,R,S - Stats</title>
+  <link rel="stylesheet" href="styles/style.css">
+ </head>
+<body>
+  <% include global/header %>
+
+  <div id="stats">
+    <h2>Stats- ____ games played</h2>
+    <table>
+      <tr>
+        <th class="top_row">Player Name</th>
+        <th class="top_row">Games Played</th>
+        <th class="top_row">Games Won</th>
+        <th class="top_row">Games Tied</th>
+        <th class="top_row">Games Lost</th>
+      </tr>
+      <%for(var i=0; i<players.length; i++){%>
+        <tr>
+          <th></span><%=players[i].name%></th>
+          <td></span><%=players[i]["games played"]%></td>
+          <td></span><%=players[i]["games won"]%></td>
+          <td></span><%=players[i]["games tied"]%></td>
+          <td></span><%=players[i]["games lost"]%></td>
+        </tr>
+      <%}%>
+      <tr>
+        <th> B(r)owser </th>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table>
+  </div>
+  <div id="buttons">
+    <a class="button" href ="/stats">Stats</a>
+    <a class="button" href ="/about">About</a>
+    <!-- <a class="button" href = "">Back to Game</a> -->
+    <a class="button" href ="/">Log Out</a>
+  </div>
+ </body>
+</html>
